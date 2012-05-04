@@ -43,7 +43,7 @@ foreach ($query2->result() as $rows)
 			};
 		if ($color == 1)
 			{
-				echo "<tr bgcolor='#C0C0C0'>";
+				echo "<tr bgcolor='#490358'>";
 				echo "<td width=20% align=center>$heroes2</td>";
 				echo "<td width=20% align=center>$level2</td>";
 				echo "<td width=20% align=center>$rblevel2</td>";
@@ -54,7 +54,7 @@ foreach ($query2->result() as $rows)
 			}
 			else
 			{
-				echo "<tr bgcolor='#808080'>";
+				echo "<tr bgcolor='#040147'>";
 				echo "<td width=20% align=center>$heroes2</td>";
 				echo "<td width=20% align=center>$level2</td>";
 				echo "<td width=20% align=center>$rblevel2</td>";
