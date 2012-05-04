@@ -5,7 +5,7 @@
 
 <p><font color="#FF0000"><blink><?=@$info?></blink></font></p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <p>Username : <?=form_input(array('name' => 'login', 'value' => set_value('login'), 'maxlength' => '12', 'size' => '12'))?>&nbsp;&nbsp;&nbsp;<?=form_error('login')?></p>
 <p>Password : <?=form_password(array('name' => 'passwd', 'value' => set_value('passwd'), 'maxlength' => '10', 'size' => '12'))?>&nbsp;&nbsp;&nbsp;<?=form_error('passwd')?></p>
 <p><?=form_submit('sign-in', 'Login')?></p>

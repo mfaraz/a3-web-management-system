@@ -9,7 +9,7 @@
 
 <?if ($u->row()->c_sheadera == $this->session->userdata('username') || $this->session->userdata('group') == 'GM'):?>
 	<h2>Reply</h2>
-	<?=form_open()?>
+	<?=form_open('', array('id' => 'search'))?>
 	<p><?=ckeditor('edit_news', $reply->html, $this->session->userdata('group'))?>&nbsp;<?=form_error('news_edit')?></p>
 	<p><?=form_submit('news_edit', 'Edit Reply')?></p>
 	<?=form_close()?>

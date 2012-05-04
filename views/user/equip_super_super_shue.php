@@ -7,7 +7,7 @@
 
 <p>Please insert the details below to equip your super super shue for <?=$this->config->item('wz_sss')?> wz</p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <?foreach($query->result() as $char):?>
 <p><?=form_radio('character', $char->c_id)?>&nbsp;&nbsp;<font color='#0000FF'><?=$char->c_id?></font>&nbsp;<?=form_error('character')?></p>
 <?endforeach?>

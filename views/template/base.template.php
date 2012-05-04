@@ -10,7 +10,7 @@
 <?php endblock(); ?>
 
 <?php startblock('page_title'); ?>
-Welcome to <?=$this->config->item('homepage')?> Account Management Tools
+Welcome to <?=$this->config->item('homepage')?> Account Management System
 <?php endblock(); ?>
 
 <?php startblock('service_box_float_l'); ?>
@@ -45,16 +45,20 @@ Welcome to <?=$this->config->item('homepage')?> Account Management Tools
 
 <?php startblock('templatemo_menu_side'); ?>
 	<ul>
-		<li>
+		<li>Account
 			<ul>
 				<li><?=anchor('a3/login', 'Login', 'title="Login"');?></li>
 				<li><?=anchor('a3/register', 'Register', 'title="Register"');?></li>
 				<li><?=anchor('a3/password_retrieve', 'Password Retrieve', 'title="Password Retrieve"');?></li>
 			</ul>
 		</li>
-		<li>
+		<li>Server
 			<ul>
 				<li><?=anchor('a3/server_status', 'Server Status', 'rel="moodalbox 600 400" title="Server Status"');?></li>
+			</ul>
+		</li>
+		<li>Heroes and Mercenaries List
+			<ul>
 				<li><?=anchor('a3/popup_board_of_heroes', 'Board Of Heroes', 'rel="moodalbox 600 400" title="Board Of Heroes"');?></li>
 				<li><?=anchor('a3/popup_board_of_mercenaries', 'Board Of Mercenaries', 'rel="moodalbox 600 400" title="Board Of Mercenaries"');?></li>
 				<li><?=anchor('a3/popup_player_online', 'Player Online', 'rel="moodalbox 600 400" title="Player Online"');?></li>

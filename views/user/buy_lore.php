@@ -7,7 +7,7 @@
 
 <p>For each lore you buy, it will cost you <?=$this->config->item('buy_lore')?> wz so if you buy 1,000 lore it will cost <?php echo $lore1=$this->config->item('buy_lore') * 1000; ?> wz. You can use this AMT if and only if your rebirth level is greater or equal than <?=$this->config->item('lore_rb_buy')?>.<br />Summary :<br />Your rebirth level >= <?=$this->config->item('lore_rb_buy')?><br />1 lore = <?=$this->config->item('buy_lore')?> wz</p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <?foreach($query->result() as $char):?>
 <p><?=form_radio('character', $char->c_id)?>&nbsp;&nbsp;<font color='#0000FF'><?=$char->c_id?></font>&nbsp;<?=form_error('character')?></p>
 <?endforeach?>

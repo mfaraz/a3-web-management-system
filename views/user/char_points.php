@@ -19,7 +19,7 @@
 <?endif?>
 
 <?if($this->charac0->charac_cid($this->uri->segment(3, 0))->num_rows() == 1):?>
-			<?=form_open()?>
+			<?=form_open('', array('id' => 'search'))?>
 			<?if($char->row()->c_sheaderb == 0 || $char->row()->c_sheaderb == 1 || $char->row()->c_sheaderb == 3):?>
 
 			<p>Strength : <?=form_input(array('name' => 'str', 'value' => 0, 'maxlength' => '5', 'size' => '6'))?>&nbsp;<?=char_attrib('STR', $char->row()->c_headera)?>&nbsp;<?=form_error('str')?>&nbsp;</p>

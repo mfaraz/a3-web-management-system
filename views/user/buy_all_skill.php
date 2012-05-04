@@ -7,7 +7,7 @@
 
 <p>You need more skill to perfect your training? Then you must have <?=$this->config->item('skillwz')?> wz in your inventory and level <?=$this->config->item('skilllvl')?> or higher</p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <?foreach($query->result() as $char):?>
 <p><?=form_radio('character', $char->c_id)?>&nbsp;&nbsp;<font color='#0000FF'><?=$char->c_id?></font>&nbsp;<?=form_error('character')?></p>
 <?endforeach?>
