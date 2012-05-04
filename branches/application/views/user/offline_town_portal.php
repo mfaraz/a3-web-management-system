@@ -7,7 +7,7 @@
 
 <p>This AMT is very useful when you found out that character is stuck somewhere in the maps. Just fill in the particular data and where you wish to teleport your character</p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <?foreach($query->result() as $char):?>
 <p><?=form_radio('character', $char->c_id)?>&nbsp;&nbsp;<font color='#0000FF'><?=$char->c_id?></font>&nbsp;<?=form_error('character')?></p>
 <?endforeach?>

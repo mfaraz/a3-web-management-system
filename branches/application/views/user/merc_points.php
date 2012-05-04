@@ -19,7 +19,7 @@
 <?endif?>
 
 <?if(merc_attrib('POINTS',  $merc->row()->Ability) != 0):?>
-			<?=form_open()?>
+			<?=form_open('', array('id' => 'search'))?>
 			<?if($merc->row()->Type == 0 || $merc->row()->Type == 1 || $merc->row()->Type == 3):?>
 
 			<p>Strength : <?=form_input(array('name' => 'str', 'value' => 0, 'maxlength' => '5', 'size' => '6'))?>&nbsp;<?=merc_attrib('STR', $merc->row()->Ability)?>&nbsp;<?=form_error('str')?>&nbsp;</p>

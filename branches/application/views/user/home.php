@@ -39,7 +39,7 @@
 		<?endif?>
 
 		<h2>Reply</h2>
-		<?=form_open('', '', array('bil_post' => $newss->Bil))?>
+		<?=form_open('', array('id' => 'search'), array('bil_post' => $newss->Bil))?>
 		<p>
 		<?=ckeditor('news_reply', '', $this->session->userdata('group'))?>&nbsp;<?=form_error('news_reply')?>
 		</p>

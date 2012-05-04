@@ -7,7 +7,7 @@
 
 <p>Ever wonder how does it feel to have the power of A3 God? PK-ing any character with 1 blow? Then take this rebirth reset. You can have this reset if and only if your rebirth is level <?=$this->config->item('rebirth_count')?> and you have <?=$this->config->item('wzresetrebirth')?> wz. Too expensive?<br>Its worth it!!!</p>
 
-<?=form_open()?>
+<?=form_open('', array('id' => 'search'))?>
 <?foreach($query->result() as $char):?>
 <p><?=form_radio('character', $char->c_id)?>&nbsp;&nbsp;<font color='#0000FF'><?=$char->c_id?></font>&nbsp;<?=form_error('character')?></p>
 <?endforeach?>
